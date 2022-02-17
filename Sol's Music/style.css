@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+body {
+  background-color: #BFBFBF;
+  color: #fff;
+  font-family: Arial;
+  line-height: 1.5;
+}
+
+footer {
+  color: #000
+  
+  
+}
+main {
+  color: #000;
+}
+
+header {
+ 
+}
+
+p {
+  margin-left: 10px;
+}
+
+h1 {
+  color: black;
+  font-family: Corinthia;
+  text-align: center;
+  font-size: 150px;
+  padding: 20px;
+  font-weight: 900;
+  letter-spacing: 2px 
+  position: relative;
+  padding-top: 150px;
+  letter-spacing: 15px;
+}
+
+h2 {
+  padding-left: 10px;
+}
+
+nav {
+  text-align: center;
+  background-color: #262626;
+  height: 75px;
+  padding-top: 10px;
+}
+
+nav ul {
+  margin-right: 50px;
+  display: inline-block;
+}
+
+nav li {
+  position: relative;
+  padding: 10px 15px;
+  display: inline-block;
+  font-size: 20px;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Helvetica;
+  
+}
+
+nav li a {
+  transition: all 0.5s ease 0s;
+}
+
+/* trying to get the navbar to be active */
+a:link {
+  color: #8F8F8F;
+  text-decoration: none
+}
+
+a:visited {
+  color: #8F8F8F;
+}
+
+a:hover {
+  color: #DBDBDB;
+}
+
+.active {
+  color: #DBDBDB;
+}
+
+.email {
+   text-align: center;
+   font-family: Oswald;
+   font-size: 18px;
+}
+
+.email-form {
+   text-align: center;
+}
+
+.banner {
+  background-image: url(https://lh3.googleusercontent.com/cPzc7xTWlfCofiA9231rOR9AH1HM4xFzhe2bqLkt6Eyv97hBlhmevUFFvYSo6NCns3VmmwF5jaJ-jmScMj7eQ-_Xp2Okh0nJWx-kRwT7j-2zgijuKTqDVM8tdQsN3sf0WR85qfU7NQ=w2400);
+  height: 1000px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
