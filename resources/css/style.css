@@ -1,3 +1,5 @@
+/* Universal Styles */
+
 * {
   box-sizing: border-box;
 }
@@ -10,20 +12,74 @@ body {
   color: #fff;
   font-family: Arial;
   line-height: 1.5;
+  
 }
 
-footer {
-  color: #000
-  
+/* Header */
+
+/* All nav bars */
+a {
+  text-decoration: none
+}
+
+nav {
+  text-align: center;
+  height: 75px;
+}
+
+nav li {
+  display: inline-block;
+  font-size: 20px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Helvetica;
+  padding: 10px 15px;
   
 }
+
+nav li a {
+  transition: all 0.5s ease 0s;
+  color: #8F8F8F;
+}
+
+/* Main nav */
+
+.main_nav {
+  background-color: #262626;
+  padding-top: 10px;
+}
+
+nav a:link {
+  color: #8F8F8F;
+}
+
+a:visited {
+  color: #8F8F8F;
+}
+
+a:hover {
+  color: #DBDBDB;
+}
+
+.active {
+  color: #DBDBDB;
+}
+  /* Media nav bar */
+
+ .media_nav {
+  text-align: center;
+  margin-top: 10px;
+} 
+
+.media_nav li a {
+  color: #262626;
+}
+
+/* Main */
 main {
   color: #000;
 }
-
-/* header {
- 
-} */
 
 p {
   margin-left: 10px;
@@ -46,62 +102,6 @@ h2 {
   padding-left: 10px;
 }
 
-nav {
-  text-align: center;
-  background-color: #262626;
-  height: 75px;
-  padding-top: 10px;
-}
-
-nav ul {
-  margin-right: 50px;
-  display: inline-block;
-}
-
-nav li {
-  position: relative;
-  padding: 10px 15px;
-  display: inline-block;
-  font-size: 20px;
-  color: #000;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: Helvetica;
-  
-}
-
-nav li a {
-  transition: all 0.5s ease 0s;
-}
-
-/* trying to get the navbar to be active */
-a:link {
-  color: #8F8F8F;
-  text-decoration: none
-}
-
-a:visited {
-  color: #8F8F8F;
-}
-
-a:hover {
-  color: #DBDBDB;
-}
-
-.active {
-  color: #DBDBDB;
-}
-
-.email {
-   text-align: center;
-   font-family: Oswald;
-   font-size: 18px;
-}
-
-.email-form {
-   text-align: center;
-}
-
 .banner {
   background-image: url("../../resources/images/soldrums.jpeg");
   height: 1000px;
@@ -109,4 +109,21 @@ a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/* Footer */
+
+footer {
+  color: #000
+  
+}
+
+.email {
+  text-align: center;
+  font-family: Oswald;
+  font-size: 18px;
+}
+
+.email-form {
+  text-align: center;
 }
