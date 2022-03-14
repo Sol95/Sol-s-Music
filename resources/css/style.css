@@ -6,6 +6,8 @@
 
 html, body {
   height: 100%;
+  width: 100%;
+  max-width: 100%;
   font-size: 16px;
 }
 body {
@@ -22,26 +24,32 @@ body {
 header {
   width: 100%;
   display: inline-flex;
-  height: 75px;
+  height: 12%;
   background-color: #0c0c0c;
 }
 
 /* All nav bars */
+
 a {
   text-decoration: none
 }
 
 nav {
-  text-align: center;
-  height: 75px;
   display: inline-flex;
   width: 50%;
+  align-items: center;
   
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
 nav li {
   display: inline-block;
-  font-size: 20px;
+  font-size: 1.2rem;
   text-align: center;
   text-transform: uppercase;
   font-family: Helvetica;
@@ -54,26 +62,11 @@ nav li a {
   color: #8F8F8F;
 }
 
-/* Main nav */
-
-.main_nav {
-  background-color: #0c0c0c;
-  padding-top: 10px;
-}
-
-nav a:link {
+a:link, a:visited  {
   color: #FF8000;
 }
 
-a:visited {
-  color: #FF8000;
-}
-
-a:hover {
-  color: #DBDBDB;
-}
-
-.active {
+a:hover, .active {
   color: #DBDBDB;
 }
 
@@ -82,14 +75,12 @@ a:hover {
 .socials {
   width: 50%;
   display: inline-flex;
-  justify-content: flex-end;
+  justify-content: end;
   align-items: center;
-  
 }
 
 .socials ul {
   display: inline-flex;
-  justify-content: center;
 }
 
 .socials ul li {
@@ -103,16 +94,6 @@ a:hover {
   transition: .6s;
 }
 
-  /* Media nav bar */
-
- .media_nav {
-  text-align: center;
-  margin-top: 10px;
-} 
-
-.media_nav li a {
-  color: #262626;
-}
 
 /* Main */
 main {
@@ -149,6 +130,7 @@ h2 {
   background-size: cover;
   display: inline-flex;
   justify-content: center;
+  /* max-width: 100%; */
 }
 
 
@@ -179,4 +161,26 @@ footer {
 
 .email-form {
   text-align: center;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 480px) {
+  .socials ul li .fa-brands {
+    font-size: 1rem;
+  }
+
+  .socials ul li {
+    margin: 0 2px;
+  }
+
+  nav li {
+    font-size: 0.75rem;
+  }
+    
+}
+
+@media only screen and (max-width: 700px) {
+  nav li {
+    padding: 5px 7.5px;
+  }
 }
